@@ -49,9 +49,21 @@ h2{
     text-align: center;
 
 }
+.row2 img{
+  display:block;
+  margin: 15px auto;
+
+}
 
 h3{
     font-size: 18px;
+    text-align: center;
+
+}
+
+h3 img {
+  display: inline;
+  margin: 20px;
 }
 
 div{
