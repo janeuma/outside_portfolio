@@ -27,6 +27,8 @@ p{
 h1{
     text-align: center;
     font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 h2{
@@ -39,6 +41,29 @@ h2{
     font-size: 20px;
 }
 
+nav a:hover{
+  text-decoration: underline; 
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute; 
+  top: -40px;     
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top:0;
+}
+
+a:focus{
+  border: 2px solid black;
+}
+
 .row1 img{
     display: block;
     margin: 15px auto;
@@ -49,6 +74,28 @@ h2{
     text-align: center;
 
 }
+
+.button, #my2019Btn, #my2018Btn, #my2017Btn, #my2016Btn, #my2015Btn, #my2014Btn{
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 45px;
+  cursor: pointer;
+}
+
+.calendar{
+  text-align: center;
+}
+
+.reading_list{
+  text-align: center;
+}
+
 .row2 img{
   display:block;
   margin: 15px auto;
@@ -58,7 +105,6 @@ h2{
 h3{
     font-size: 18px;
     text-align: center;
-
 }
 
 h3 img {
@@ -66,17 +112,38 @@ h3 img {
   margin: 20px;
 }
 
+#my2019Btn, #my2018Btn, #my2017Btn, #my2016Btn, #my2015Btn, #my2014Btn{
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 8px 60px;
+  cursor: pointer;
+}
+
+#dots{
+  text-align: center;
+}
+
+ol li{
+  margin-left: 60px;
+}
 div{
 
 }
 
 footer{
-
+  margin-top: 15px;
 }
 
 #art2018, #more2019art, #art2017, #art2016, #art2015, #art2014 {
   display: none;
 }
+
 
 @media only screen and (min-width: 800px){
   .container{
