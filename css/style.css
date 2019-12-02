@@ -27,6 +27,8 @@ p{
 h1{
     text-align: center;
     font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 h2{
@@ -73,7 +75,7 @@ a:focus{
 
 }
 
-.button{
+.button, #my2019Btn, #my2018Btn, #my2017Btn, #my2016Btn, #my2015Btn, #my2014Btn{
   background-color: blue;
   border: none;
   color: white;
@@ -103,7 +105,6 @@ a:focus{
 h3{
     font-size: 18px;
     text-align: center;
-
 }
 
 h3 img {
@@ -111,17 +112,38 @@ h3 img {
   margin: 20px;
 }
 
+#my2019Btn, #my2018Btn, #my2017Btn, #my2016Btn, #my2015Btn, #my2014Btn{
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 8px 60px;
+  cursor: pointer;
+}
+
+#dots{
+  text-align: center;
+}
+
+ol li{
+  margin-left: 60px;
+}
 div{
 
 }
 
 footer{
-
+  margin-top: 15px;
 }
 
 #art2018, #more2019art, #art2017, #art2016, #art2015, #art2014 {
   display: none;
 }
+
 
 @media only screen and (min-width: 800px){
   .container{
