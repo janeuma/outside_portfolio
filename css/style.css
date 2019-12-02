@@ -45,21 +45,6 @@ nav a:hover{
   text-decoration: underline; 
 }
 
-.skip a{
-  background: white;
-  left: 0;
-  padding: 6px;
-  position: absolute; 
-  top: -40px;     
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-}
-
-.skip a:focus{
-  top:0;
-}
-
 a:focus{
   border: 2px solid black;
 }
@@ -172,6 +157,24 @@ footer{
     margin: 10px;
   }
 
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute; 
+    top: -40px;     
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  .skip a:focus{
+    position: absolute;
+    left: 0;
+    top: auto;
+    overflow: visible;
+  }
+
   nav a:hover{
     background-color: #BF4E58;
     border: 1px solid white;
@@ -191,6 +194,18 @@ footer{
   .row2 a{
     align-items: center;
   }
+
+  .row1_research{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: center;
+    color: red;
+  }
+
+  .row1_research li{
+    list-style-type: none;
+  }
+
 }
 
 @media screen and (prefers-reduced-motion: reduce){
