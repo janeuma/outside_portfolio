@@ -48,13 +48,13 @@ h1{
     font-size: 40px;
     margin-top: 15px;
     margin-bottom: 15px;
-    color: #1e6a5b;
+    color: #112738;
 }
 
 h2{
     text-align: center;
     font-size: 30px;
-    color: #2fa68e;
+    color: #295c87;
 }
 
 /* hidden navigation bar on mobile */
@@ -224,7 +224,7 @@ ol li{
 
 footer{
   margin-top: 15px;
-  color: #1e6a5b;
+  color:#295c87;
   /* background-color: #2fa68e; */
 }
 
