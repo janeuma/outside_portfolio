@@ -10,7 +10,7 @@ body{
 }
 
 a{
-    color: blue;
+    color: #2fa68e;
     text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ a:focus{
 }
 
 .current{
-    color: purple;
+  color: #1e6a5b;
 }
 
 p{
@@ -48,16 +48,23 @@ h1{
     font-size: 40px;
     margin-top: 15px;
     margin-bottom: 15px;
+    color: #1e6a5b;
 }
 
 h2{
     text-align: center;
     font-size: 30px;
+    color: #2fa68e;
 }
 
 .nav{
     text-align: center;
     font-size: 20px;
+    display:none;
+}
+
+#with_nav #main{
+  display:block;
 }
 
 nav a:hover{
@@ -80,7 +87,7 @@ a:focus{
 }
 
 .button{
-  background-color: blue;
+  background-color: #17344c;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -201,7 +208,6 @@ footer{
     padding: 5px 20px;
     margin: 10px;
   }
-
 
   nav a:hover{
     color: purple;
