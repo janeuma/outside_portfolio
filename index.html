@@ -18,8 +18,10 @@
         <img href = "images/umsi.jpg">
     </div>
     <div class="nav">
-    <script src="css/readmorebutton.js"></script>
-      <nav>
+        <span id="opennav" onclick="openNav()">&#9776;</span>
+      <nav id= "navbar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
         <ul>
           <li><a href="index.html" class="current">About</a></li>
           <li><a href="research.html">Research</a></li>
@@ -29,6 +31,20 @@
         </ul>
       </nav>
     </div>
+
+    <script>
+      function openNav(){
+        console.log("opened navigation bar");
+        document.querySelector("#navbar").style.width = "250px";
+      }
+
+      function closeNav(){
+        console.log("closed navigation bar");
+        document.querySelector("#navbar").style.width = "0";
+      }
+    </script>
+
+
     <main>
     <div class="container">
     <div class="row1">
