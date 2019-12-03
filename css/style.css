@@ -158,10 +158,6 @@ h3 img {
   margin: 20px;
 }
 
-ol li{
-  margin-left: 60px;
-}
-
 /* research pages styling */
 .row2_research img{
   display:block;
@@ -181,6 +177,11 @@ ol li{
 }
 
 /* students page styling */
+ol li{
+  margin-left: 60px;
+  font-size: 16px;
+}
+
 .phD_studs img, .masters_students img, .undergrad img{
   display: block;
   margin: auto;
@@ -189,14 +190,24 @@ ol li{
 .phD_studs h3, .masters_students h3, .undergrad h3{
   font-size: 20px;
   text-transform: uppercase;
+  color: #081e19;
+  text-decoration: underline;
 }
 
 .phD_studs h4, .masters_students h4, .undergrad h4{
-  font-size: 18px;
+  font-size: 20px;
+  color: #081e19;
+
 }
 
 .phD_studs h5, .masters_students h5, .undergrad h5{
+  font-size: 18px;
+  color: #2b9882;
+}
+
+.phD_studs h6, .masters_students h6, .undergrad h6{
   font-size: 15px;
+  color: #33554e;
 }
 
 .phD_studs, .masters_students, .undergrad{
@@ -206,7 +217,9 @@ ol li{
 .phD_studs p, .masters_students p, .undergrad p{
   font-size: 14px;
   display:block;
-  margin-left: 60px;
+  margin: auto 80px;
+  color: #2b9882;
+
 }
 
 footer{
