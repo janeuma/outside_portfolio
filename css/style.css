@@ -138,6 +138,11 @@ footer{
     grid-gap: 10px;
   }
 
+  .intro {
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
   main {
     margin-bottom: 100px;
   }
@@ -152,10 +157,12 @@ footer{
     line-height: 0;
   }
 
+
   nav ul{
     top: 0;
     display: flex;
     flex-direction: row;
+    width: 100%;
     padding: 10px;
     justify-content: center;
     align-content: center;
@@ -198,6 +205,8 @@ footer{
   }
 
   .logos img {
+    padding: 15px 30px;
+    float: left;
     height: 80px;
     width: auto;
   }
@@ -212,9 +221,10 @@ footer{
   }
 
   .row1_research{
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-    justify-content: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
     color: red;
   }
 
