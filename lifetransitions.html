@@ -18,9 +18,12 @@
         <img href = "images/umsi.jpg">
     </div>
     <div class="nav">
-      <nav>
+        <span id="opennav" onclick="openNav()">Menu &#9776;</span>
+      <nav id= "navbar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close &times;</a>
+
         <ul>
-          <li><a href="index.html">About</a></li>
+          <li><a href="index.html" >About</a></li>
           <li><a href="research.html" class="current">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="students.html">Students</a></li>
@@ -28,6 +31,22 @@
         </ul>
       </nav>
     </div>
+
+    <script>
+      function openNav(){
+        if (window.innerWidth < "800px"){
+          console.log("is working");
+        }
+          console.log("opened navigation bar");
+          document.querySelector("#navbar").style.width = "380px";
+        }
+
+      function closeNav(){
+        console.log("closed navigation bar");
+        document.querySelector("#navbar").style.width = "0";
+      }
+      
+    </script>
     <main class="pt_articles">
     <div class="container">
     <div class="row1">
@@ -45,7 +64,7 @@
     <div class="lt_pub">
         <br><p class="title">Selected Publications</p>
         <div id="text">
-            <a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank"><img src="images/FMS.jpg" style="width:80px; margin-right:10px; margin-top:4px;"></a> 
+            <a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank"><img src="images/FMS.jpg" style="width:80px;"></a> 
             My new paper "<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</a>," 
             co-authored with Avery Dame-Griff, Elias Capello, and Zahari Richter, was published 
             in <a href="https://www.tandfonline.com/toc/rfms20/current" target="_blank">Feminist Media Studies</a>.	
@@ -54,7 +73,7 @@
             </div>
             <br>
         <div id="text">
-            <a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank"><img src="images/JAMIA.jpg" style="width:80px; margin-right:10px; margin-top:4px;"></a>
+            <a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank"><img src="images/JAMIA.jpg" style="width:80px;"></a>
             I'm very excited that my paper "<a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank">Mapping Gender Transition Sentiment Patterns via 
             Social Media Data: Toward Decreasing Transgender Mental Health Disparities</a>" was 
             accepted for publication in the <a href="https://academic.oup.com/jamia" target="_blank">Journal of the American Medical Informatics Association (JAMIA)</a>,
@@ -66,7 +85,7 @@
             <br>
         <p class="title"><strong>CSCW 2018 Best Paper Honorable Mention!</strong></p> 
           <div id="text">
-          <img src="images/CSCW18.jpg" style="width:80px; margin-right:10px; margin-top:4px;"/>
+          <img src="images/CSCW18.jpg" style="width:80px;"/>
           My paper "<a href="PDFs/HaimsonSocialTransitionMachinery.pdf" target="_blank">Social Media
           as Social Transition Machinery</a>" received a 
           Best Paper Honorable Mention award at 
@@ -78,7 +97,7 @@
 
         <p class="title">Dissertation defense!</p>
           <div id="text">
-          <a href="images/defense.jpg" target="_blank"><img src="images/defense.jpg" style="width:80px; margin-right:10px; margin-top:4px;"></a>
+          <a href="images/defense.jpg" target="_blank"><img src="images/defense.jpg" style="width:80px;"></a>
           I successfully defended my dissertation "<a href="https://escholarship.org/uc/item/19c235q0" target="_blank">The Social Complexities of Transgender 
           Identity Disclosure on Social Media</a>" on February 22, and have now completed my PhD! 
           Many thanks to my committee members - Gillian Hayes, Gloria Mark, Andrea Forte, and Bonnie Ruberg -
@@ -90,7 +109,7 @@
 
         <p class="title">Paper accepted for New Media & Society</p>
           <div id="text">
-          <img src="images/NMS.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+          <img src="images/NMS.jpg" style="width:80px;">
           "<a href="http://journals.sagepub.com/doi/full/10.1177/1461444817711402" target="_blank">Relationship Breakup Disclosures and Media Ideologies on Facebook</a>," 
           a paper I co-authored with Nazanin Andalibi, Munmun De Choudhury, and Gillian Hayes, 
           has been accepted for publication in <a href="https://us.sagepub.com/en-us/nam/journal/new-media-society" target="_blank">New Media & Society</a>.
@@ -100,7 +119,7 @@
         <br>
         <p class="title">Papers accepted for CHI 2017</p>
           <div id="text">
-          <img src="images/CHI17.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+          <img src="images/CHI17.jpg" style="width:80px;">
           I had two papers accepted for <a href="http://chi2016.acm.org/" target="_blank">CHI 2017</a>! 
           The first one is titled "<a href="http://www.oliverhaimson.com/PDFs/HaimsonWhatMakesLiveEventsEngaging.pdf" target="_blank">What Makes Live Events Engaging on Facebook Live, Periscope,
           and Snapchat</a>," co-authored with John Tang. The other is "<a href="PDFs/RhoClassConfessions.pdf" target="_blank">Class
@@ -114,7 +133,7 @@
 
         <p class="title">Feature article in XRDS Magazine</p>
           <div id="text">
-          <img src="images/xrds.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+          <img src="images/xrds.jpg" style="width:80px;">
           I have a feature article in the new issue of  
           <a href="http://xrds.acm.org/current-issue.cfm" target="_blank">XRDS: 
           Crossroads, The ACM Magazine for Students</a>, titled 
@@ -127,7 +146,7 @@
         
         <p class="title">CHI 2016 Best Paper Honorable Mention!</p>
             <div id="text">
-            <img src="images/CHI16.jpg" style="width:80px; margin-right:10px; margin-top:4px;"/>
+            <img src="images/CHI16.jpg" style="width:80px;"/>
             I'm so excited to announce that my paper "<a href="PDFs/HaimsonDigitalFootprints.pdf" target="_blank">Digital Footprints and Changing Networks During Online Identity Transitions</a>,"
             co-authored by Jed Brubaker, Lynn Dombrowski, and Gillian Hayes, received a 
             Best Paper Honorable Mention award at 
@@ -139,7 +158,7 @@
 
         <p class="title">Papers accepted for CHI 2015</p> 
             <div id="text">
-            <img src="images/CHI15.jpg" style="width:80px; margin-right:10px; margin-top:4px;"> 
+            <img src="images/CHI15.jpg" style="width:80px;"> 
             Two papers from our research this summer during my internship at eBay Research Labs 
             were accepted for <a href="http://chi2015.acm.org/" target="_blank">CHI 2015</a>: 
             "<a href="http://oliverhaimson.com/PDFs/HaimsonOnlineInspiration.pdf" target="_blank">Online Inspiration and Exploration for Identity Reinvention</a>" (Oliver Haimson, 
@@ -153,7 +172,7 @@
 
         <p class="title">CSCW 2015 Best Paper Honorable Mention!</p>
             <div id="text">
-            <img src="images/CSCW.jpg" style="width:80px; margin-right:10px; margin-top:4px;"/>
+            <img src="images/CSCW.jpg" style="width:80px;"/>
             I'm so excited to announce that my paper "<a href="PDFs/HaimsonDisclosureStressSupport.pdf" target="_blank">Disclosure, Stress, and Support During Gender 
             Transition on Facebook</a>," co-authored by Jed Brubaker, Lynn Dombrowski, and Gillian 
             Hayes, received a Best Paper Honorable Mention award at 

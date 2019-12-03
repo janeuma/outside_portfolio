@@ -18,27 +18,53 @@
         <img href = "images/umsi.jpg">
     </div>
     <div class="nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="research.html" class="current">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="students.html">Students</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-        </ul>
-      </nav>
+        <div class="nav">
+            <span id="opennav" onclick="openNav()">Menu &#9776;</span>
+          <nav id= "navbar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close &times;</a>
+    
+            <ul>
+              <li><a href="index.html" >About</a></li>
+              <li><a href="research.html" class="current">Research</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="students.html">Students</a></li>
+              <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <script>
+          function openNav(){
+            if (window.innerWidth < "800px"){
+              console.log("is working");
+            }
+              console.log("opened navigation bar");
+              document.querySelector("#navbar").style.width = "380px";
+            }
+    
+          function closeNav(){
+            console.log("closed navigation bar");
+            document.querySelector("#navbar").style.width = "0";
+          }
+          
+        </script>
     </div>
+
     <main>
     <div class="container">
     <div class="row1">
-        <p class="title">Online Spaces and Sensitive Populations</p>
-        <p>Online spaces can be important platforms for people from sensitive, stigmatized, and vulnerable populations to discuss their problems and find support; yet platform design decisions impact how people present themselves and interact with others. 
-          By studying these groups' online self-presentation and disclosure practices, along with the politics of social media platform design, we can understand how to design technology to better support those facing difficult issues like sexual abuse, relationship breakups, eating disorders, depression, and gender presentation.</p>
+        <p class="title">Online Spaces and Sensitive Populations</p><br>
+        <p>Online spaces can be important platforms for people from sensitive, stigmatized, and vulnerable populations to discuss their 
+          problems and find support; yet platform design decisions impact how people present themselves and interact with others. 
+          <br> <br>
+          By studying these groups' online self-presentation and disclosure practices, along with the politics of social media platform design, 
+          we can understand how to design technology to better support those facing difficult issues like sexual abuse, relationship breakups, 
+          eating disorders, depression, and gender presentation.</p>
     </div>
     <div class="row2">
         <p class="title">Selected Publications</p>
         <div id="text">
-            <a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf"><img src="images/CSCW19.jpg" style="width:80px; margin-right:10px; margin-top:4px;"></a> 
+            <a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf"><img src="images/CSCW19.jpg" style="width:80px;"></a> 
             "<a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank">The Language of LGBTQ+ Minority Stress Experiences on Social Media</a>," 
             a paper I co-authored with Koustuv Saha (lead author), Sang Chan Kim, Manikanta Reddy, AJ Carter, 
             Eva Sharma, and Munmun De Choudhury, has been accepted to <a href="http://cscw.acm.org/2019/">
@@ -49,7 +75,7 @@
             <br>
 
         <div id="text">
-          <a href="https://interactions.acm.org/archive/view/july-august-2019/how-to-do-better-with-gender-on-surveys" target="_blank"><img src="images/interactions.jpg" style="width:80px; margin-right:10px; margin-top:4px;"></a>
+          <a href="https://interactions.acm.org/archive/view/july-august-2019/how-to-do-better-with-gender-on-surveys" target="_blank"><img src="images/interactions.jpg" style="width:80px;"></a>
           I have a forum article in the new issue of  
           <a href="https://interactions.acm.org/archive/toc/july-august-2019" target="_blank">ACM Interactions
           Magazine</a>, titled 
@@ -63,7 +89,7 @@
 
 
         <div id="text">
-            <img src="images/CHI19.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+            <img src="images/CHI19.jpg" style="width:80px;">
             "<a href="https://dl.acm.org/citation.cfm?id=3234942" target="_blank">Social Support, Reciprocity, and Anonymity in Responses to Sexual Abuse Disclosures 
             on Social Media</a>," a <a href="https://tochi.acm.org/" target="_blank">TOCHI</a>
             paper I co-authored with Nazanin Andalibi (lead author), Munmun De
@@ -75,7 +101,7 @@
         <br>
 
         <div id="text">
-            <img src="images/CHI18.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+            <img src="images/CHI18.jpg" style="width:80px;">
             A paper I co-authored with collaborators from Yahoo! and Princeton is accepted 
             for <a href="https://chi2018.acm.org/" target="_blank">CHI 2018</a>, titled 
             "<a href="/PDFs/JaroszewskiGenderfluidOrAttack.pdf" target="_blank">'Genderfluid'
@@ -88,7 +114,7 @@
         <br>
 
         <div id="text">
-            <img src="images/CHI17.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+            <img src="images/CHI17.jpg" style="width:80px;">
             I had two papers accepted for <a href="http://chi2016.acm.org/" target="_blank">CHI 2017</a>! 
             The first one is titled "<a href="http://www.oliverhaimson.com/PDFs/HaimsonWhatMakesLiveEventsEngaging.pdf" target="_blank">What Makes Live Events Engaging on Facebook Live, Periscope,
             and Snapchat</a>," co-authored with John Tang. The other is "<a href="PDFs/RhoClassConfessions.pdf" target="_blank">Class
@@ -101,7 +127,7 @@
         <br>
 
         <div id="text">
-            <img src="images/sms.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+            <img src="images/sms.jpg" style="width:80px;">
             "<a href="http://sms.sagepub.com/content/2/4/2056305116672486.full.pdf+html" target="_blank">Baking 
             Gender Into Social Media Design: How Platforms Shape Categories for Users and Advertisers</a>," 
             a paper I co-authored with Rena Bivens, was 
@@ -113,7 +139,7 @@
          
 
         <div id="text">
-            <img src="images/FirstMonday.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+            <img src="images/FirstMonday.jpg" style="width:80px;">
             "<a href="http://journals.uic.edu/ojs/index.php/fm/article/view/6791" target="_blank">Constructing
             and enforcing 'authentic' identity online: Facebook, real names, and
             non-normative identities</a>," a paper I co-authored with Anna Lauren Hoffmann, was 
@@ -126,7 +152,7 @@
         <br>
 
         <div id="text">
-            <img src="images/CHI19.jpg" style="width:80px; margin-right:10px; margin-top:4px;">
+            <img src="images/CHI19.jpg" style="width:80px;">
             "<a href="https://dl.acm.org/citation.cfm?id=3234942" target="_blank">Social Support, Reciprocity, and Anonymity in Responses to Sexual Abuse Disclosures 
             on Social Media</a>," a <a href="https://tochi.acm.org/" target="_blank">TOCHI</a>
             paper I co-authored with Nazanin Andalibi (lead author), Munmun De
@@ -138,7 +164,7 @@
         <br>
 
         <div id="text">
-            <img src="images/CSCW16.jpg" style="width:80px; margin-right:10px; margin-top:4px;"> 
+            <img src="images/CSCW16.jpg" style="width:80px;"> 
             I forgot to announce this when we first found out! "<a href="PDFs/PaterHungerHurtsButStarvingWorks.pdf" target="_blank">'Hunger Hurts but Starving Works:' Characterizing the Presentation of Eating Disorders 
             Online</a>," a paper that I collaborated on with Jessica Pater, Nazanin Andalibi, and 
             Elizabeth Mynatt, was accepted for the <a href="http://cscw.acm.org/2016/" target="_blank"> 
@@ -153,7 +179,7 @@
     </div>
     </main>
     <footer>
-      <h3> Oliver L. Haimson Ph.D. 
+      <h3> Oliver L. Haimson Ph.D. <br>
           <a href="mailto:haimson@umich.edu" target="_blank"><img src="images/email.jpg" alt="Email" height="25px"> </a>
           <a href="https://twitter.com/oliverhaimson" target="_blank"><img src="images/twitter.jpg" alt="Twitter" height="25px"></a>
           <a href="https://scholar.google.com/citations?user=-5n02zEAAAAJ&hl=en&oi=ao" target="_blank"><img src="images/scholar.jpg" alt="Google Scholar" height="25px"></a>

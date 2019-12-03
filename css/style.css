@@ -81,7 +81,7 @@ nav a{
 }
 
 nav a:hover{
-  color: green;
+  color: rgb(83, 170, 83);
 }
 
 .closebtn{
@@ -117,7 +117,7 @@ a:focus{
 .title{
     font-size: 20px;
     text-align: center;
-
+    padding-top: 10px;
 }
 
 /* buttons for blog and resume */
@@ -162,6 +162,24 @@ ol li{
   margin-left: 60px;
 }
 
+/* research pages styling */
+.row2_research img{
+  display:block;
+  margin: auto;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.lt_pub img{
+  display:block;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.row2 #text{
+  margin: auto 25px;
+}
+
 /* students page styling */
 .phD_studs img, .masters_students img, .undergrad img{
   display: block;
@@ -193,6 +211,8 @@ ol li{
 
 footer{
   margin-top: 15px;
+  color: #1e6a5b;
+  /* background-color: #2fa68e; */
 }
 
 
@@ -341,6 +361,8 @@ footer{
   .lt_pub img{
     float: left;
     padding: 5px;
+    margin-right:10px; 
+    margin-top:4px;
   }
 }
 
