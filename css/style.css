@@ -366,6 +366,7 @@ footer{
   }
 
   .row2_research img{
+    display: inline;
     padding: 20px;
   }
 
@@ -379,11 +380,20 @@ footer{
   }
 
   .phD_studs{
-    grid-column: 1 / -1;
+    grid-column: 1/-1;
     grid-row: 3 / 4;
-    justify-items: stretch;
   }
 
+  .student { 
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .student-info {
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+  }
   .masters_students{
     grid-column: 1 / -1;
     grid-row: 4 / 5;
@@ -434,14 +444,4 @@ footer{
     top:0;
   }
 
-  .student { 
-    display: flex !important;
-    flex-direction: row !important;
-  }
-
-  .student-info {
-    display:flex;
-    flex-direction: column;
-    margin: 10px;
-  }
 }
