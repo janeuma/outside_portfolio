@@ -13,26 +13,35 @@
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <div class="header">
-        <h1>Oliver L. Haimson Ph.D.</h1>
-        <h2>Assistant Professor</h2>
+        <h1><a href="index.html" class="titlename">Oliver L. Haimson Ph.D.</a></h1>
+        <h2><a href="index.html">Assistant Professor</a></h2>
         <img href = "images/umsi.jpg">
     </div>
+    <div class="desktop_nav">
+        <ul>
+          <li><a href="index.html" class="current">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="students.html">Students</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <div class="nav">
-        <div class="nav">
-            <span id="opennav" onclick="openNav()">Menu &#9776;</span>
-          <nav id= "navbar">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close &times;</a>
-    
-            <ul>
-              <li><a href="index.html" >About</a></li>
-              <li><a href="research.html" >Research</a></li>
-              <li><a href="publications.html">Publications</a></li>
-              <li><a href="students.html" class="current">Students</a></li>
-              <li><a href="teaching.html">Teaching</a></li>
-            </ul>
-          </nav>
-        </div>
+    <div class="mobile_nav">
+        <span id="opennav" onclick="openNav()">Menu &#9776;</span>
+      <nav id= "navbar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close &times;</a>
+
+        <ul>
+          <li><a href="index.html" class="current">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="students.html">Students</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+        </ul>
+      </nav>
+    </div>
     
         <script>
           function openNav(){
@@ -74,8 +83,9 @@
       <div class="phD_studs">
         <h3>Current PhD Students</h3> <br>
         <div class="student">
-          <div class="student-info">
+           
           <img src="images/dan.jpg" height="250px">
+          <div class="student-info">
             <h4>Dan Delmonaco</h4>
             <h5>he/him</h5>
             <h6>PhD Student, co-advised by Gabi Marcu</h6>
