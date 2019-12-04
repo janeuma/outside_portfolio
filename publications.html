@@ -47,42 +47,23 @@
             console.log("closed navigation bar");
             document.querySelector("#navbar").style.width = "0";
           }
-
-
-          var collapse = document.getElementsByClassName("collapsible");
-          var num;
-
-          for (num = 0; num < collapse.length; num++) {
-              collapse[num].addEventListener("click", function c(){
-                  this.classList.toggle("active");
-                  var art = this.nextElementSibling;
-                  if(art.style.display === "block") {
-                      console.log("is clicked and brings up articles");
-                      art.style.display = "none";
-                  }
-                  else{
-                      console.log("articles are hidden");
-                      art.style.display = "block";
-                  }
-              });
-}
           
         </script>
     </div>
 
     <main>
     <div class="container">
-        <p class="title">PUBLICATIONS</p>
-        <div id="text">
-        <br>
+        <p class="title">PUBLICATIONS</p><br>
 
+        <div id="text">
+        
         <button type="button" class="collapsible">Journal Publications (Peer-Reviewed)</button>
-        <!-- <script src="css/readmorebutton.js"></script> -->
+        <script src="css/readmorebutton.js"></script>
 
         <div class="js_pubs">
 
         <a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">
-          <img src="images/FMS.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
+          <img src="images/FMS.jpg" style="width:50px;"/></a>
         <b>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</b><br>
         <u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
         <i>Feminist Media Studies</i>, 
@@ -90,7 +71,8 @@
         [<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">open-access link</a>]  
         [<a href="PDFs/HaimsonTumblrTransTechnology.pdf" target="_blank">PDF</a>]  <br>
                 
-        <a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank"><img src="images/CSCW19.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
+        <a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank"><img src="images/CSCW19.jpg" 
+          style="width:50px;"/></a>
         <b>The Language of LGBTQ+ Minority Stress Experiences on Social Media</b><br>
         Koustuv Saha, Sang Chan Kim, Manikanta D. Reddy, Albert J. Carter, Eva Sharma, <u>Oliver L. Haimson</u>, Munmun De Choudhury<br>
         <i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i>, 
@@ -98,7 +80,7 @@
         [acceptance rate: 31%]<br>
         [<a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank">PDF</a>]   
 
-        <p>
+        
         
         <a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank"><img src="images/JAMIA.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
         <b>Mapping Gender Transition Sentiment Patterns via 
@@ -195,7 +177,7 @@
         <br><br>
         
 
-        <button type="button" class="collapsible">Full Conference Publications (Peer-Reviewed)</button>
+        <!-- <button type="button" class="collapsible">Full Conference Publications (Peer-Reviewed)</button> -->
         <div class = "p_jour">
         <a href="https://dl.acm.org/citation.cfm?id=3173881" target="_blank"><img src="images/CHI18.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
         <b>“Genderfluid” or “Attack Helicopter”: Responsible HCI Research Practice with 
