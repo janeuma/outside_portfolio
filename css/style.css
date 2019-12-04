@@ -411,6 +411,11 @@ footer{
     flex-direction: column;
     margin: 10px;
   }
+
+  .student-info p{
+    align-self: center;
+  }
+
   .masters_students{
     grid-column: 1 / -1;
     grid-row: 4 / 5;
