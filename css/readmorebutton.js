@@ -1,16 +1,17 @@
-var navi = document.querySelector("#access_nav");
-// var body = document.body;
+var collapse = document.getElementsByClassName("collapsible");
+var num;
 
-// navi.addEventListener('click', function(c){
-//     body.className = body.className? '' : 'with_nav';
-//     c.preventDefault();
-// });
-
-navi.addEventListener('click', function(closebtn){
-    document.querySelector("#access_nav").style.width = "0";
-});
-
-navi.addEventListener('click', function(openNav){
-    console.log("open navigation bar")
-    document.querySelector("#access_nav").style.width = "250px";
-});
+for (num = 0; num < collapse.length; num++) {
+    collapse[num].addEventListener("click", function(){
+        this.classList.toggle("active");
+        var art = this.nextElementSibling;
+        if(art.style.display === "block") {
+            console.log("is clicked and brings up articles");
+            art.style.display = "none";
+        }
+        else{
+            console.log("articles are hidden");
+            art.style.display = "block";
+        }
+    });
+}

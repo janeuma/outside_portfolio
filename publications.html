@@ -47,6 +47,25 @@
             console.log("closed navigation bar");
             document.querySelector("#navbar").style.width = "0";
           }
+
+
+          var collapse = document.getElementsByClassName("collapsible");
+          var num;
+
+          for (num = 0; num < collapse.length; num++) {
+              collapse[num].addEventListener("click", function c(){
+                  this.classList.toggle("active");
+                  var art = this.nextElementSibling;
+                  if(art.style.display === "block") {
+                      console.log("is clicked and brings up articles");
+                      art.style.display = "none";
+                  }
+                  else{
+                      console.log("articles are hidden");
+                      art.style.display = "block";
+                  }
+              });
+}
           
         </script>
     </div>
@@ -56,17 +75,21 @@
         <p class="title">PUBLICATIONS</p>
         <div id="text">
         <br>
-        
-        <p class="title">Journal Publications (Peer-Reviewed)</p>
-        <p>
-        
-        <a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank"><img src="images/FMS.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
+
+        <button type="button" class="collapsible">Journal Publications (Peer-Reviewed)</button>
+        <!-- <script src="css/readmorebutton.js"></script> -->
+
+        <div class="js_pubs">
+
+        <a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">
+          <img src="images/FMS.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
         <b>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</b><br>
         <u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
         <i>Feminist Media Studies</i>, 
         published online first October 2019, 17 pages<br>
-        [<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">open-access link</a>]  [<a href="PDFs/HaimsonTumblrTransTechnology.pdf" target="_blank">PDF</a>]  <br>
-        
+        [<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">open-access link</a>]  
+        [<a href="PDFs/HaimsonTumblrTransTechnology.pdf" target="_blank">PDF</a>]  <br>
+                
         <a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank"><img src="images/CSCW19.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
         <b>The Language of LGBTQ+ Minority Stress Experiences on Social Media</b><br>
         Koustuv Saha, Sang Chan Kim, Manikanta D. Reddy, Albert J. Carter, Eva Sharma, <u>Oliver L. Haimson</u>, Munmun De Choudhury<br>
@@ -166,14 +189,14 @@
         Maria Bistarkey, Gillian R. Hayes<br> 
         <i>ACM Transactions on Accessible Computing (TACCESS)</i> 7(1), June 2015<br>
         [<a href="https://dl.acm.org/citation.cfm?id=2751564" target="_blank">link</a>] [<a href="PDFs/BoydEvaluatingCollaborativeiPad.pdf" target="_blank">PDF</a>]
-
+        </div>
         
-        
+        <!-- start of full conference publications -->
         <br><br>
         
-        <p class="title">Full Conference Publications (Peer-Reviewed)</p>
-        <p>
-        
+
+        <button type="button" class="collapsible">Full Conference Publications (Peer-Reviewed)</button>
+        <div class = "p_jour">
         <a href="https://dl.acm.org/citation.cfm?id=3173881" target="_blank"><img src="images/CHI18.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a>
         <b>“Genderfluid” or “Attack Helicopter”: Responsible HCI Research Practice with 
         Non-Binary Gender Variation in Online Communities</b><br>
@@ -287,7 +310,7 @@
         <i>ACM CHI Conference on Human Factors in Computing Systems</i>, April 2014<br>
         [acceptance rate: 23%]<br>
         [<a href="https://dl.acm.org/citation.cfm?id=2557077" target="_blank">link</a>]  [<a href="PDFs/HaimsonDDFSeeksSame.pdf" target="_blank">PDF</a>]
-
+        </div>
         
         <br><br>
         
