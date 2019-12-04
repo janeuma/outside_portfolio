@@ -101,6 +101,10 @@ nav a:hover{
   font-size: 24px;
 }
 
+.desktop_nav{
+  display:none;
+}
+
 nav a:hover{
   text-decoration: underline; 
 }
@@ -155,7 +159,7 @@ h3{
 
 h3 img {
   display: inline;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
 
 /* research pages styling */
@@ -284,24 +288,37 @@ footer{
     position: initial;
     bottom: 0px;
     width: 100%;
-    background-color: #291940;
+    /* background-color: #291940; */
     height: 50px;
     padding-top: 20px;
     line-height: 0;
   }
 
-  nav ul{
+  .mobile_nav{
+    display:none;
+  }
+
+  .desktop_nav{
+    display:flex;
+    flex-direction:row;  
+  }
+
+  .desktop_nav ul{
     top: 0;
-    /* display: flex;
-    flex-direction: row; */
-    width: 100%;
+    display: flex;
+    flex-direction: row;
     padding: 10px;
     justify-content: center;
     align-content: center;
-    background-color: red;
+    /* background-color: red; */
     height: 30px;
-  }
+    list-style-type: none;
 
+  }
+  
+  .desktop_nav li{
+    text-decoration: none;
+  }
   nav a{
     padding: 5px 20px;
     margin: 10px;
