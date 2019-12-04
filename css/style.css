@@ -237,6 +237,16 @@ footer{
     grid-gap: 10px;
   }
 
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .research-publication {
+    margin: 20px !important;
+  }
+
   .intro {
     font-size: 18px;
     line-height: 1.25;
@@ -398,5 +408,16 @@ footer{
 
   .skip a:focus{
     top:0;
+  }
+
+  .student { 
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .student-info {
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
   }
 }
