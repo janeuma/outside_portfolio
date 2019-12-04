@@ -184,30 +184,6 @@ padding-top: 10px;
 margin: auto 25px;
 }
 
-/*publication page w/ collapsible menus */
-.collapsible {
-background-color: #112738;
-color: white;
-cursor: pointer;
-padding: 18px;
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 15px;
-}
-
-.active, .collapsible:hover {
-background-color: #295c87;
-}
-
-.js_pubs {
-padding: 0 18px;
-display: none;
-overflow: hidden;
-background-color: #f1f1f1;
-}
-
 /* students page styling */
 ol li{
 margin-left: 60px;
@@ -292,7 +268,6 @@ footer{
   position: initial;
   bottom: 0px;
   width: 100%;
-  /* background-color: #291940; */
   height: 50px;
   padding-top: 20px;
   line-height: 0;
@@ -305,6 +280,12 @@ footer{
 .desktop_nav{
   display:flex;
   flex-direction:row;  
+  text-align: center;
+  width: 0;
+  position: initial;
+  z-index: 900;
+  background-color:#f0f5f9;
+  font-size: 20px;
 }
 
 .desktop_nav ul{
@@ -316,6 +297,7 @@ footer{
   align-content: center;
   height: 30px;
   list-style-type: none;
+  margin: auto 350px;
 }
 
 .desktop_nav li{
@@ -325,23 +307,13 @@ footer{
 .desktop_nav a{
   padding: 5px 20px;
   margin: 10px;
+
 }
 
 nav a:hover{
   color: purple;
   text-decoration: none;
   -webkit-transition: 0.3s -webkit-filter linear;
-}
-
-nav{
-  text-align: center;
-  font-size: 24px;
-  height: 100%;
-  width: 0;
-  position: absolute;
-  z-index: 900;
-  background-color:#f0f5f9;
-  padding-top: 60px;
 }
 
 #navbar{
@@ -376,7 +348,7 @@ nav{
   grid-row: 1 / 2;
   justify-self: center;
   align-self: center;
-  color: red;
+  color: #17344c;
 }
 
 .row2_research{
